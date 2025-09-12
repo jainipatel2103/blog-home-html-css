@@ -1,0 +1,822 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+
+.BlogHomePage-Cryptocurrency {
+    height: 3249px;
+    width: 1440px;
+    background-color: #FAFBFC;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: #ffffff;
+    padding: 16px 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* nav-container */
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1f2937;
+}
+
+.img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-left: 8px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-link:hover {
+    color: #6366f1;
+}
+
+.dropdown-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.2s ease;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.login-btn {
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.login-btn:hover {
+    color: #6366f1;
+}
+
+.signup-btn {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        gap: 20px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .nav-actions {
+        gap: 12px;
+    }
+
+    .signup-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Hero-Section   */
+
+.Hero-Section {
+    width: 1440px;
+    height: 2168px;
+    margin-bottom: 80px;
+}
+
+/* hero-Container */
+
+.hero-Container {
+    height: 415px;
+    padding-top: 72px;
+    background-image: url(/img/Backgroug\ image.png);
+}
+
+/* hero-content */
+
+.hero-content {
+    width: 521px;
+    height: 214px;
+    margin-left: 415px;
+}
+
+.subheading {
+    height: 28px;
+    width: 72px;
+    display: flex;
+    margin-left: 224px;
+}
+
+.subheading p {
+    font-size: 16px;
+    font-weight: normal;
+    height: 24px;
+    width: 42px;
+    margin: 2px 4px 2px 12px;
+}
+
+.subheading img {
+    height: 16px;
+    margin: 6px 8px 6px 4px;
+}
+
+.subtext {
+    height: 174px;
+}
+
+.subtext h1 {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #111111;
+}
+
+.subtext p {
+    font-size: 18px;
+    align-items: center;
+    margin: 16px 4px 0px 4px;
+    color: #7d7c7c;
+    text-align: center;
+}
+
+/* Tabs-Filter */
+.Tabs-Filter {
+    height: 56px;
+    margin-top: 48px;
+}
+
+.Categories {
+    width: 709px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 8px;
+    margin-left: 301.5px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(100, 100, 111, 0.2);
+}
+
+.view-all {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.view-all:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.Crypto {
+    width: 83px;
+    font-size: 16px;
+    justify-items: center;
+    color: #111111;
+    text-decoration: none;
+}
+
+.Blockchain {
+    width: 111px;
+    font-size: 16px;
+    justify-items: center;
+    color: #111111;
+    text-decoration: none;
+}
+
+.Announcements {
+    width: 150px;
+    font-size: 16px;
+    justify-items: center;
+    color: #111111;
+    text-decoration: none;
+}
+
+.People {
+    width: 83px;
+    font-size: 16px;
+    justify-items: center;
+    color: #111111;
+    text-decoration: none;
+}
+
+.Engineering {
+    width: 117px;
+    font-size: 16px;
+    justify-items: center;
+    color: #111111;
+    text-decoration: none;
+}
+
+.NFT {
+    width: 61px;
+    font-size: 16px;
+    justify-items: center;
+    color: #111111;
+    text-decoration: none;
+}
+
+/* Content */
+
+.Content {
+    height: 1786px;
+    width: 1312px;
+    margin-top: 64px;
+}
+
+/* Featured-Blog-Card */
+
+.Featured-Blog-Card {
+    height: 500px;
+    display: flex;
+}
+
+.Featured-Blog-Card img {
+    width: 769px;
+}
+
+.card-container {
+    width: 543px;
+    padding: 48px 56px 79px 56px;
+    border-radius: 6px;
+    background-color: #FFFFFF
+}
+
+.card-Content {
+    width: 431px;
+    height: 300px;
+}
+
+.Info {
+    width: 190px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.crypto-but {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 8px 4px 8px;
+    margin-right: 16px;
+}
+
+.crypto-but:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.Info p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.Title {
+    height: 232px;
+}
+
+.Title h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 120%;
+    margin-bottom: 16px;
+}
+
+.Title p {
+    font-size: 16px;
+}
+
+.read-more-btn {
+    margin-top: 79px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 2px solid #6366f1;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background: #6366f1;
+    color: white;
+    transform: translateX(4px);
+}
+
+.read-more-btn svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover svg {
+    transform: translateX(4px);
+}
+
+
+.Row-1 {
+    height: 579px;
+    margin-top: 64px;
+    display: flex;
+    gap: 32px;
+}
+
+.Card {
+    width: 416px;
+    height: 578px;
+
+}
+
+.Card img {
+    height: 300px;
+}
+
+.blockcahin-Content {
+    width: 416px;
+    height: 300px;
+
+}
+
+
+.Content {
+    width: 368px;
+    height: 177px;
+    margin: 24px;
+}
+
+.card-Info {
+    width: 300px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.Blockcahin-but {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 8px 4px 8px;
+    margin-right: 16px;
+}
+
+.Blockcahin:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.card-Info p {
+    font-size: 16px;
+    font-weight: normal;
+    width: 90px;
+}
+
+.card-Title h1 {
+    font-size: 24px;
+    line-height: 139%;
+    margin-bottom: 8px;
+}
+
+.card-Title p {
+    font-size: 16px;
+}
+
+.read-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 2px solid #6366f1;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-top: 24px;
+}
+
+.read-more-btn:hover {
+    background: #6366f1;
+    color: white;
+    transform: translateX(4px);
+}
+
+.read-more-btn svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover svg {
+    transform: translateX(4px);
+}
+
+.People-but {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 8px 4px 8px;
+    margin-right: 16px;
+}
+
+.People:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.NFT-but {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 8px 4px 8px;
+    margin-right: 16px;
+}
+
+.NFT-but:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+
+.material-symbols-outlined {
+    height: 16px;
+}
+
+.Row-2 {
+    height: 579px;
+    margin-top: 64px;
+    display: flex;
+    gap: 32px;
+}
+
+.Engineering-but {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 8px 4px 8px;
+    margin-right: 16px;
+}
+
+.Engineering-but:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+
+.Crypto-but {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 8px 4px 8px;
+    margin-right: 16px;
+}
+
+.Crypto-but:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+
+
+.Blockchain-but {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 8px 4px 8px;
+    margin-right: 16px;
+}
+
+.Blockchain-but:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.Pagination {
+    width: 376px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 600px;
+    margin: 80px auto;
+}
+
+.Pagination div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #DCDCDC;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+
+}
+
+/* Active number */
+
+
+.number-1 {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+}
+
+/* Arrows */
+.arrow-left::before {
+    content: "<";
+    font-size: 18px;
+    color: black;
+}
+
+.arrow-right::before {
+    content: ">";
+    font-size: 18px;
+    color: black;
+}
+
+/* Hover effect */
+.Pagination div:hover:not(.number-1) {
+    background-color: #f0f0f0;
+}
+
+
+/* Newslette-section */
+
+
+.Newslette-section {
+    width: 1440px;
+    height: 323px;
+    background-image: url(/img/Backgroug\ image.png);
+    padding: 32px 64px 32px 64px;
+}
+
+.newslette-contain {
+    width: 1312px;
+    height: 259px;
+    padding: 80px;
+}
+
+.newslette-container {
+    display: flex;
+    width: 1152px;
+    height: 99px;
+    padding: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.newslette-Content {
+    width: 533px;
+    height: 99px;
+    margin-right: 80px;
+
+}
+
+.newslette-Content h1 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 24px;
+}
+
+.newslette-Content p {
+    font-size: 18px;
+    line-height: 150%;
+    width: 533px;
+}
+
+.Actions {
+    width: 539px;
+    height: 80px;
+}
+
+.Actions p {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 16px;
+}
+
+.from {
+    display: flex;
+}
+
+.from-input {
+    width: 299px;
+    height: 40px;
+    background-color: #F5F8FB;
+    text-align: center;
+}
+
+.from-btn {
+    width: 120px;
+    height: 40px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    padding: 8px 24px;
+    color: #FFFFFF;
+}
+
+.footer-section {
+    width: 1440px;
+    height: 294px;
+    padding: 80px 64px;
+    background-color: #FFFFFF;
+}
+
+.footer-content {
+    width: 1312px;
+    height: 36px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-links {
+    margin-left: 296.5px;
+    margin-right: 288px;
+}
+
+.footer-links a {
+    margin-right: 18px;
+    font-size: 16px;
+    color: #111111;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-social-links img {
+    margin-right: 8px;
+}
+
+.Credits {
+    width: 1312px;
+    height: 54px;
+    text-align: center;
+}
+
+.row {
+    margin-top: 33px;
+}
+
+.row a {
+    margin-left: 24px;
+    font-size: 14px;
+    color: #111111;
+}
